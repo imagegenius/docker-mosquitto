@@ -1,0 +1,8 @@
+#!/usr/bin/with-contenv bash
+
+[[ ! -f /config/mosquitto.conf ]] &&
+	cp /defaults/mosquitto.conf /config/mosquitto.conf
+
+# permissions
+chown -R abc:abc \
+	/config/
