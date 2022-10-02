@@ -16,8 +16,6 @@ RUN set -xe && \
 		mosquitto==${VERSION} \
 		mosquitto-clients==${VERSION} && \
 	echo "**** cleanup ****" && \
-	apk del --purge \
-		build-dependencies && \
 	rm -rf \
 		/tmp/* \
 
