@@ -17,7 +17,7 @@ RUN set -xe && \
 		mosquitto-clients==${VERSION} && \
 	echo "**** cleanup ****" && \
 	rm -rf \
-		/tmp/* \
+		/tmp/*
 
 # copy local files
 COPY root/ /
