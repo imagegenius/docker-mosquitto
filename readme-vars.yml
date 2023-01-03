@@ -1,0 +1,53 @@
+---
+
+# project information
+project_name: mosquitto
+project_url: "https://mosquitto.org/"
+project_logo: "https://mosquitto.org/images/mosquitto-text-side-28.png"
+project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) an open source (EPL/EDL licensed) message broker that implements the MQTT protocol versions 5.0, 3.1.1 and 3.1. Mosquitto is lightweight and is suitable for use on all devices from low power single board computers to full servers."
+project_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
+project_blurb_optional_extras_enabled: false
+
+# supported architectures
+available_architectures:
+  - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
+
+# development version
+development_versions: false
+development_versions_items:
+  - { tag: "latest", desc: "Latest mosquitto release with an Alpine base." }
+
+# container parameters
+common_param_env_vars_enabled: true
+param_container_name: "{{ project_name }}"
+param_usage_include_net: false
+param_usage_include_env: true
+param_env_vars:
+  - { env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use eg. Europe/London." }
+param_usage_include_vols: true
+param_volumes:
+  - { vol_path: "/config", vol_host_path: "path_to_data", desc: "Contains the configuration file" }
+param_usage_include_ports: true
+param_ports:
+  - { external_port: "1883", internal_port: "1883", port_desc: "MQTT Port" }
+  - { external_port: "8883", internal_port: "8883", port_desc: "MQTT TLS Port" }
+  - { external_port: "9001", internal_port: "9001", port_desc: "MQTT Websockets Port" }
+param_device_map: false
+cap_add_param: false
+
+# optional container parameters
+opt_param_usage_include_env: false
+opt_param_usage_include_vols: false
+opt_param_usage_include_ports: false
+opt_param_device_map: false
+opt_cap_add_param: false
+optional_block_1: false
+
+# application setup block
+app_setup_block_enabled: true
+app_setup_block: |
+  The default configuration should be enough to get started.
+
+# changelog
+changelogs:
+  - { date: "1.02.23:", desc: "Initial Release." }
