@@ -328,8 +328,8 @@ pipeline {
         sh "docker build \
           --label \"org.opencontainers.image.created=${GITHUB_DATE}\" \
           --label \"org.opencontainers.image.authors=hyde.services\" \
-          --label \"org.opencontainers.image.url=https://github.com/linuxserver/docker-mosquitto/packages\" \
-          --label \"org.opencontainers.image.source=https://github.com/linuxserver/docker-mosquitto\" \
+          --label \"org.opencontainers.image.url=https://github.com/hydazz/docker-mosquitto/packages\" \
+          --label \"org.opencontainers.image.source=https://github.com/hydazz/docker-mosquitto\" \
           --label \"org.opencontainers.image.version=${EXT_RELEASE_CLEAN}-${TAG_NUMBER}\" \
           --label \"org.opencontainers.image.revision=${COMMIT_SHA}\" \
           --label \"org.opencontainers.image.vendor=hyde.services\" \
@@ -357,8 +357,8 @@ pipeline {
             sh "docker build \
               --label \"org.opencontainers.image.created=${GITHUB_DATE}\" \
               --label \"org.opencontainers.image.authors=hyde.services\" \
-              --label \"org.opencontainers.image.url=https://github.com/linuxserver/docker-mosquitto/packages\" \
-              --label \"org.opencontainers.image.source=https://github.com/linuxserver/docker-mosquitto\" \
+              --label \"org.opencontainers.image.url=https://github.com/hydazz/docker-mosquitto/packages\" \
+              --label \"org.opencontainers.image.source=https://github.com/hydazz/docker-mosquitto\" \
               --label \"org.opencontainers.image.version=${EXT_RELEASE_CLEAN}-${TAG_NUMBER}\" \
               --label \"org.opencontainers.image.revision=${COMMIT_SHA}\" \
               --label \"org.opencontainers.image.vendor=hyde.services\" \
@@ -380,8 +380,8 @@ pipeline {
             sh "docker buildx build --platform=linux/arm/v7 --output \"type=docker\" \
               --label \"org.opencontainers.image.created=${GITHUB_DATE}\" \
               --label \"org.opencontainers.image.authors=hyde.services\" \
-              --label \"org.opencontainers.image.url=https://github.com/linuxserver/docker-mosquitto/packages\" \
-              --label \"org.opencontainers.image.source=https://github.com/linuxserver/docker-mosquitto\" \
+              --label \"org.opencontainers.image.url=https://github.com/hydazz/docker-mosquitto/packages\" \
+              --label \"org.opencontainers.image.source=https://github.com/hydazz/docker-mosquitto\" \
               --label \"org.opencontainers.image.version=${EXT_RELEASE_CLEAN}-${TAG_NUMBER}\" \
               --label \"org.opencontainers.image.revision=${COMMIT_SHA}\" \
               --label \"org.opencontainers.image.vendor=hyde.services\" \
@@ -410,8 +410,8 @@ pipeline {
             sh "docker buildx build --platform=linux/arm64 --output \"type=docker\" \
               --label \"org.opencontainers.image.created=${GITHUB_DATE}\" \
               --label \"org.opencontainers.image.authors=hyde.services\" \
-              --label \"org.opencontainers.image.url=https://github.com/linuxserver/docker-mosquitto/packages\" \
-              --label \"org.opencontainers.image.source=https://github.com/linuxserver/docker-mosquitto\" \
+              --label \"org.opencontainers.image.url=https://github.com/hydazz/docker-mosquitto/packages\" \
+              --label \"org.opencontainers.image.source=https://github.com/hydazz/docker-mosquitto\" \
               --label \"org.opencontainers.image.version=${EXT_RELEASE_CLEAN}-${TAG_NUMBER}\" \
               --label \"org.opencontainers.image.revision=${COMMIT_SHA}\" \
               --label \"org.opencontainers.image.vendor=hyde.services\" \
