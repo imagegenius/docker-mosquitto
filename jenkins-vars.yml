@@ -5,15 +5,15 @@ project_name: docker-mosquitto
 external_type: alpine_repo
 release_type: stable
 release_tag: latest
-branch: main
+ig_branch: main
 repo_vars:
   - BUILD_VERSION_ARG = 'MOSQUITTO_VERSION'
-  - USER = 'hydazz'
-  - REPO = 'docker-mosquitto'
+  - IG_USER = 'imagegenius'
+  - IG_REPO = 'docker-mosquitto'
   - CONTAINER_NAME = 'mosquitto'
-  - DOCKERHUB_IMAGE = 'hydaz/mosquitto'
-  - DEV_DOCKERHUB_IMAGE = 'dev/mosquitto'
-  - PR_DOCKERHUB_IMAGE = 'pipepr/mosquitto'
+  - DOCKERHUB_IMAGE = 'imagegenius/mosquitto'
+  - DEV_DOCKERHUB_IMAGE = 'igdev/mosquitto'
+  - PR_DOCKERHUB_IMAGE = 'igpipepr/mosquitto'
   - DIST_IMAGE = 'alpine'
   - DIST_TAG = '3.16'
   - DIST_REPO = 'http://dl-cdn.alpinelinux.org/alpine/v3.16/main/'
