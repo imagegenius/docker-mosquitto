@@ -9,7 +9,7 @@ LABEL maintainer="hydazz"
 
 RUN \
   if [ -z ${MOSQUITTO_VERSION+x} ]; then \
-    MOSQUITTO_VERSION=$(curl -sL  "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/APKINDEX.tar.gz" | tar -xz -C /tmp \
+    MOSQUITTO_VERSION=$(curl -sL "http://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/APKINDEX.tar.gz" | tar -xz -C /tmp \
       && awk '/^P:mosquitto$/,/V:/' /tmp/APKINDEX | sed -n 2p | sed 's/^V://'); \
   fi && \
   echo "**** install packages ****" && \
