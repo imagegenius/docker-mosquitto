@@ -44,7 +44,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/London
+      - TZ=Australia/Melbourne
     volumes:
       - path_to_data:/config
     ports:
@@ -61,7 +61,7 @@ docker run -d \
   --name=mosquitto \
   -e PUID=1000 \
   -e PGID=1000 \
-  -e TZ=Europe/London \
+  -e TZ=Australia/Melbourne \
   -p 1883:1883 \
   -p 8883:8883 \
   -p 9001:9001 \
@@ -81,7 +81,7 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-p 9001` | MQTT Websockets Port |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
-| `-e TZ=Europe/London` | Specify a timezone to use eg. Europe/London. |
+| `-e TZ=Australia/Melbourne` | Specify a timezone to use eg. Australia/Melbourne. |
 | `-v /config` | Contains the configuration file |
 
 ## Environment variables from files (Docker secrets)
