@@ -46,7 +46,7 @@ services:
       - PGID=1000
       - TZ=Australia/Melbourne
     volumes:
-      - path_to_data:/config
+      - path_to_appdata:/config
     ports:
       - 1883:1883
       - 8883:8883
@@ -65,7 +65,7 @@ docker run -d \
   -p 1883:1883 \
   -p 8883:8883 \
   -p 9001:9001 \
-  -v path_to_data:/config \
+  -v path_to_appdata:/config \
   --restart unless-stopped \
   ghcr.io/imagegenius/mosquitto:latest
 ```
