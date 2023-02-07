@@ -4,8 +4,6 @@
 
 [![GitHub Release](https://img.shields.io/github/release/imagegenius/docker-mosquitto.svg?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/imagegenius/docker-mosquitto/releases)
 [![GitHub Package Repository](https://shields.io/badge/GitHub%20Package-blue?logo=github&logoColor=ffffff&style=for-the-badge)](https://github.com/imagegenius/docker-mosquitto/packages)
-[![Docker Hub](https://shields.io/badge/Docker%20Hub-blue?logo=docker&logoColor=ffffff&style=for-the-badge)](https://hub.docker.com/r/imagegenius/mosquitto)
-![Image Size](https://img.shields.io/docker/image-size/imagegenius/mosquitto/latest.svg?color=007EC6&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=docker)
 [![Jenkins Build](https://img.shields.io/jenkins/build?labelColor=555555&logoColor=ffffff&style=for-the-badge&jobUrl=https%3A%2F%2Fci.imagegenius.io%2Fjob%2FDocker-Pipeline-Builders%2Fjob%2Fdocker-mosquitto%2Fjob%2Fmain%2F&logo=jenkins)](https://ci.imagegenius.io/job/Docker-Pipeline-Builders/job/docker-mosquitto/job/main/)
 
 [Mosquitto](https://mosquitto.org/) an open source (EPL/EDL licensed) message broker that implements the MQTT protocol versions 5.0, 3.1.1 and 3.1. Mosquitto is lightweight and is suitable for use on all devices from low power single board computers to full servers.
