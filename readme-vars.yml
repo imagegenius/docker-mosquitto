@@ -4,7 +4,7 @@
 project_name: mosquitto
 project_url: "https://mosquitto.org/"
 project_logo: "https://mosquitto.org/images/mosquitto-text-side-28.png"
-project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) an open source (EPL/EDL licensed) message broker that implements the MQTT protocol versions 5.0, 3.1.1 and 3.1. Mosquitto is lightweight and is suitable for use on all devices from low power single board computers to full servers."
+project_blurb: "Eclipse Mosquitto is an open source (EPL/EDL licensed) message broker that implements the MQTT protocol versions 5.0, 3.1.1 and 3.1. Mosquitto is lightweight and is suitable for use on all devices from low power single board computers to full servers."
 project_github_repo_url: "https://github.com/imagegenius/docker-{{ project_name }}"
 project_blurb_optional_extras_enabled: false
 
