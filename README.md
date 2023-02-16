@@ -22,6 +22,7 @@ This image supports the following architectures:
 | :----: | :----: | ---- |
 | x86-64 | ✅ | amd64-\<version tag\> |
 | arm64 | ❌ | |
+| armhf | ❌ | |
 
 ## Application Setup
 
@@ -43,7 +44,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Australia/Melbourne
+      - TZ=Etc/UTC
     volumes:
       - path_to_appdata:/config
     ports:
@@ -60,16 +61,17 @@ docker run -d \
   --name=mosquitto \
   -e PUID=1000 \
   -e PGID=1000 \
-  -e TZ=Australia/Melbourne \
+  -e TZ=Etc/UTC \
   -p 1883:1883 \
   -p 8883:8883 \
   -p 9001:9001 \
   -v path_to_appdata:/config \
   --restart unless-stopped \
   ghcr.io/imagegenius/mosquitto:latest
+
 ```
 
-## Container Variables
+## Variables
 
 To configure the container, pass variables at runtime using the format `<external>:<internal>`. For instance, `-p 8080:80` exposes port `80` inside the container, making it accessible outside the container via the host's IP on port `8080`.
 
@@ -80,7 +82,7 @@ To configure the container, pass variables at runtime using the format `<externa
 | `-p 9001` | MQTT Websockets Port |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
-| `-e TZ=Australia/Melbourne` | Specify a timezone to use eg. Australia/Melbourne. |
+| `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
 | `-v /config` | Contains the configuration file |
 
 ## Umask for running applications
