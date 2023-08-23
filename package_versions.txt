@@ -30,9 +30,9 @@ libssl3                 3.1.2-r0          apk
 libunistring            1.1-r1            apk   
 libwebsockets           4.3.2-r2          apk   
 linux-pam               1.5.2-r10         apk   
-mosquitto               2.0.15-r3         apk   
-mosquitto-clients       2.0.15-r3         apk   
-mosquitto-libs          2.0.15-r3         apk   
+mosquitto               2.0.17-r0         apk   
+mosquitto-clients       2.0.17-r0         apk   
+mosquitto-libs          2.0.17-r0         apk   
 musl                    1.2.4-r1          apk   
 musl-utils              1.2.4-r1          apk   
 ncurses-terminfo-base   6.4_p20230506-r0  apk   
