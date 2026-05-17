@@ -8,6 +8,10 @@ project_blurb: "Mosquitto is an open source (EPL/EDL licensed) message broker th
 project_github_repo_url: "https://github.com/imagegenius/docker-{{ project_name }}"
 project_blurb_optional_extras_enabled: false
 
+project_deprecation_status: true
+project_deprecation_message: |
+  no longer use, alternatvies exist
+
 # supported architectures
 available_architectures:
   - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest" }
